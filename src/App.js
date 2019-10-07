@@ -31,7 +31,12 @@ class App extends React.Component {
       <div >
 
         {/* Pass the onChange function into component as prop */}
-        <UserInput nameChange={this.nameChangedHandler}/>
+        <UserInput 
+        nameChange={this.nameChangedHandler}
+        // Value we want for component when page loads 
+        currentName={this.state.userName}
+          
+        />
         
         {/* Using Props */}
         {/* <UserOutput userName="Alex" code="React" /> */}

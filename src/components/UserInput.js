@@ -15,7 +15,11 @@ const userInput = (props) => {
 
             <div style={style}>
 
-                <input type="text" onChange={props.nameChange} />
+                <input 
+                type="text" 
+                onChange={props.nameChange} 
+                // Value we want when page loads
+                value={props.currentName} />
 
             </div>
 

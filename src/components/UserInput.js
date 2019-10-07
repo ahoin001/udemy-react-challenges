@@ -1,16 +1,23 @@
 import React from 'react';
 
 
-export default class UserInput extends React.Component{
+export default class UserInput extends React.Component {
 
+    render() {
 
-    render(){
+        // Second Way to add CSS inline in react
+        const style = {
 
-        return(
+            padding: '8px',
+            border: '1px solid',
+            width: '15em'
+        }
 
-            <div>
+        return (
 
-                <input type="text" onChange={this.props.nameChange}/>
+            <div style={style}>
+
+                <input type="text" onChange={this.props.nameChange} />
 
             </div>
 

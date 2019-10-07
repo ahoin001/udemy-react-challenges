@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Output.css'
 
 export default class UserInput extends React.Component{
 
